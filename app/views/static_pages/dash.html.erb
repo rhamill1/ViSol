@@ -1,0 +1,24 @@
+    <nav class="light-blue lighten-1" role="navigation">
+      <div class="nav-wrapper container">
+        <img src="/visol_logo.png" id="logo-container" class="img-logo" href="#" class="brand-logo">
+        <ul class="right hide-on-med-and-down">
+          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </ul>
+      </div>
+    </nav>
+
+
+<div class='charts-wrapper'>
+  <div class='actual-charts'>
+    <%= high_chart('month-chart', @month_chart) %> <br>
+  </div>
+
+
+  <h3>Save up to $25,000 over 10 years with Batteries!</h3>
+  <div class='battery-charts'>
+    <p>Sharing your batteries allows Sunrun to use your energy to power other customers in the grid. Doing so allows you to earn money, allows for independence from power outages.</p>
+    <h5>
+      <%=link_to 'Share and Start Earning Now', chris_battery_path%>
+    </h5>
+  </div>
+</div>
